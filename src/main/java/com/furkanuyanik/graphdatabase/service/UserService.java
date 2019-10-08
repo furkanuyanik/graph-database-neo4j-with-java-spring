@@ -16,4 +16,7 @@ public class UserService {
   public Collection<User> getAll(){
     return userRepository.getAllUsers();
   }
+  public Collection<User> findByNameContaining(String name){
+    return userRepository.findByNameContaining(name);
+  }
 }
