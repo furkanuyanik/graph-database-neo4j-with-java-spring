@@ -47,3 +47,5 @@ Using Graph Database (Neo4J) with Java Spring Framework
 * CREATE (DarkKnight)-[:RATED {rating: 2}]->(YunusKan)
 * CREATE (DarkKnight)-[:RATED {rating: 3}]->(UmutNalkiran)
 * CREATE (DarkKnight)-[:RATED {rating: 4}]->(GurkanSolen)
+
+# OPEN BROWSER and GO TO localhost:8081/api/user
