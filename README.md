@@ -10,8 +10,7 @@ Using Graph Database (Neo4J) with Java Spring Framework
   
 2. Generate the project
 
-## SET CONFIGURATIONS
-
+## Set Configurations
 1. Open CMD and run 'mvnw spring-boot:run' in project files
 2. Open 'pom.xml' and insert to code
 3. Insert the following code
@@ -21,11 +20,13 @@ Using Graph Database (Neo4J) with Java Spring Framework
             <version>3.2.0-RC2</version>
         </dependency>
         
-# INSTALL "Neo4j Desktop" and CREATE GRAPH
+# CREATE A JAVA SPRING PROJECT
+## Install "Neo4j Desktop" 
 1. Download from website https://neo4j.com/download/
 2. Install "Neo4j Desktop"
-3. Select "New Project"
-4. Click "Add Graph" from panel to be opened. 
-5. Start service
-6. Click "Open Browser" from Manage page
+## Create Graph
+1. Select "New Project"
+2. Click "Add Graph" from panel to be opened. 
+3. Start service
+4. Click "Open Browser" from Manage page
 
