@@ -1,25 +1,25 @@
 Using Graph Database (Neo4J) with Java Spring Framework
 
-**Host:** localhost
-**Port:** 8081
+* **Host:** localhost
+* **Port:** 8081
 
 Download & Run: http://localhost:8081/api/user
 
 # A. CREATE A JAVA SPRING PROJECT
 ## 1. Create Project
-i. Go to https://start.spring.io/ and select congire settings
+- Go to https://start.spring.io/ and select congire settings
   - **Project:** Maven Project, 
   - **Language:** Java, 
   - **Spring Boot:** 2.1.6, 
   - **Packaging -> Jar Java:** 11 
   - **Dependencies:** Spring Web, Neo4J
   
-ii. Generate the project
+- Generate the project
 
 ## 2. Set Configurations
-i. Open CMD and run 'mvnw spring-boot:run' in project files
-ii. Open 'pom.xml' and insert to code
-iii. Insert the following code
+- Open CMD and run 'mvnw spring-boot:run' in project files
+- Open 'pom.xml' and insert to code
+- Insert the following code
         <dependency>
             <groupId>org.neo4j</groupId>
             <artifactId>neo4j-ogm-bolt-driver</artifactId>
@@ -28,13 +28,13 @@ iii. Insert the following code
         
 # B. CREATE A GRAPH DATABASE
 ## 1. Install "Neo4j Desktop" 
-i. Download from website https://neo4j.com/download/
-ii. Install "Neo4j Desktop"
+- Download from website https://neo4j.com/download/
+- Install "Neo4j Desktop"
 ## 2. Create Graph
-i. Select "New Project"
-ii. Click "Add Graph" from panel to be opened. 
-iii. Start service
-iv. Click "Open Browser" from Manage page
+- Select "New Project"
+- Click "Add Graph" from panel to be opened. 
+- Start service
+- Click "Open Browser" from Manage page
 ## 3. Add Data to Database
 ### a. Add Movie
 * CREATE (Inception:Movie {title: 'Inception', director: 'Christopher Nalan'})
