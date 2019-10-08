@@ -37,19 +37,25 @@ Using Graph Database (Neo4J) with Java Spring Framework
 - Click "Open Browser" from Manage page
 ## 3. Add Data to Database
 ### a. Add Movie
-```CREATE (Inception:Movie {title: 'Inception', director: 'Christopher Nalan'})
-CREATE (DarkKnight:Movie {title: 'The Dark Knight', director: 'Christopher Nalan'})```
+```
+CREATE (Inception:Movie {title: 'Inception', director: 'Christopher Nalan'})
+CREATE (DarkKnight:Movie {title: 'The Dark Knight', director: 'Christopher Nalan'})
+```
 ### b. Add User
-```CREATE (FurkanUyanik: User {name: 'Furkan Uyanik', age: 23})
+```
+CREATE (FurkanUyanik: User {name: 'Furkan Uyanik', age: 23})
 CREATE (YunusKan: User {name: 'Yunus Kan', age: 39})
 CREATE (UmutNalkiran: User {name: 'Umut Nalkıran', age: 34})
-CREATE (GurkanSolen: User {name: 'Gürkan Şölen', age: 20})```
+CREATE (GurkanSolen: User {name: 'Gürkan Şölen', age: 20})
+```
 ### c. Add Connection
-```CREATE (Inception)-[:RATED {rating: 9}]->(FurkanUyanik)
+```
+CREATE (Inception)-[:RATED {rating: 9}]->(FurkanUyanik)
 CREATE (Inception)-[:RATED {rating: 2}]->(YunusKan)
 CREATE (Inception)-[:RATED {rating: 6}]->(UmutNalkiran)
 CREATE (Inception)-[:RATED {rating: 4}]->(GurkanSolen)
 CREATE (DarkKnight)-[:RATED {rating: 1}]->(FurkanUyanik)
 CREATE (DarkKnight)-[:RATED {rating: 2}]->(YunusKan)
 CREATE (DarkKnight)-[:RATED {rating: 3}]->(UmutNalkiran)
-CREATE (DarkKnight)-[:RATED {rating: 4}]->(GurkanSolen)```
+CREATE (DarkKnight)-[:RATED {rating: 4}]->(GurkanSolen)
+```
