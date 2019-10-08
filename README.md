@@ -21,7 +21,7 @@ Using Graph Database (Neo4J) with Java Spring Framework
             <version>3.2.0-RC2</version>
         </dependency>
         
-# INSTALL "Neo4j Desktop" and CREATE GRAPGH
+# INSTALL "Neo4j Desktop" and CREATE GRAPH
 1. Download from website https://neo4j.com/download/
 2. Install "Neo4j Desktop"
 3. Select "New Project"
