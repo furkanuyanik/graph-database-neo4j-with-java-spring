@@ -1,5 +1,10 @@
 Using Graph Database (Neo4J) with Java Spring Framework
 
+Host: localhost
+Port: 8081
+
+Download & Run: http://localhost:8081/api/user
+
 # CREATE A JAVA SPRING PROJECT
 1. Go to https://start.spring.io/ and select congire settings
   - Project: Maven Project, 
@@ -47,5 +52,3 @@ Using Graph Database (Neo4J) with Java Spring Framework
 * CREATE (DarkKnight)-[:RATED {rating: 2}]->(YunusKan)
 * CREATE (DarkKnight)-[:RATED {rating: 3}]->(UmutNalkiran)
 * CREATE (DarkKnight)-[:RATED {rating: 4}]->(GurkanSolen)
-
-# OPEN BROWSER and GO TO localhost:8081/api/user
