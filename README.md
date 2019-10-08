@@ -3,7 +3,7 @@ Using Graph Database (Neo4J) with Java Spring Framework
 * **Host:** localhost
 * **Port:** 8081
 
-Download & Run: http://localhost:8081/api/user
+**Download & Run:** http://localhost:8081/api/user
 
 # A. CREATE A JAVA SPRING PROJECT
 ## 1. Create Project
