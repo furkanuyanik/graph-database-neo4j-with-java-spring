@@ -20,7 +20,7 @@ Using Graph Database (Neo4J) with Java Spring Framework
             <version>3.2.0-RC2</version>
         </dependency>
         
-# CREATE A JAVA SPRING PROJECT
+# CREATE A GRAPH DATABASE
 ## Install "Neo4j Desktop" 
 1. Download from website https://neo4j.com/download/
 2. Install "Neo4j Desktop"
@@ -29,4 +29,10 @@ Using Graph Database (Neo4J) with Java Spring Framework
 2. Click "Add Graph" from panel to be opened. 
 3. Start service
 4. Click "Open Browser" from Manage page
-
+## Add Data to Database
+### Add Movie
+CREATE (Inception:Movie {title: 'Inception', director: 'Christopher Nalan'})
+CREATE (DarkKnight:Movie {title: 'The Dark Knight', director: 'Christopher Nalan'})
+### Add User
+CREATE (Furkan: User {name: 'Furkan Uyanik', age: 23})
+CREATE (Umut: User {name: 'Yunus Nalkiran', age: 39})
