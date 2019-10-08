@@ -31,7 +31,7 @@ Using Graph Database (Neo4J) with Java Spring Framework
 4. Click "Open Browser" from Manage page
 ## Add Data to Database
 ### Add Movie
-[code]CREATE (Inception:Movie {title: 'Inception', director: 'Christopher Nalan'})[/code]
+CREATE (Inception:Movie {title: 'Inception', director: 'Christopher Nalan'})
 CREATE (DarkKnight:Movie {title: 'The Dark Knight', director: 'Christopher Nalan'})
 ### Add User
 CREATE (Furkan: User {name: 'Furkan Uyanik', age: 23})
