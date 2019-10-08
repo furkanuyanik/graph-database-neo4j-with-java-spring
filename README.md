@@ -1,49 +1,50 @@
 Using Graph Database (Neo4J) with Java Spring Framework
 
-Host: localhost
-Port: 8081
+**Host:** localhost
+**Port:** 8081
 
 Download & Run: http://localhost:8081/api/user
 
-# CREATE A JAVA SPRING PROJECT
-1. Go to https://start.spring.io/ and select congire settings
-  - Project: Maven Project, 
-  - Language: Java, 
-  - Spring Boot: 2.1.6, 
-  - Packaging -> Jar Java: 11 
-  - Dependencies: Spring Web, Neo4J
+# A. CREATE A JAVA SPRING PROJECT
+## 1. Create Project
+i. Go to https://start.spring.io/ and select congire settings
+  - **Project:** Maven Project, 
+  - **Language:** Java, 
+  - **Spring Boot:** 2.1.6, 
+  - **Packaging -> Jar Java:** 11 
+  - **Dependencies:** Spring Web, Neo4J
   
-2. Generate the project
+ii. Generate the project
 
-## Set Configurations
-1. Open CMD and run 'mvnw spring-boot:run' in project files
-2. Open 'pom.xml' and insert to code
-3. Insert the following code
+## 2. Set Configurations
+i. Open CMD and run 'mvnw spring-boot:run' in project files
+ii. Open 'pom.xml' and insert to code
+iii. Insert the following code
         <dependency>
             <groupId>org.neo4j</groupId>
             <artifactId>neo4j-ogm-bolt-driver</artifactId>
             <version>3.2.0-RC2</version>
         </dependency>
         
-# CREATE A GRAPH DATABASE
-## Install "Neo4j Desktop" 
-1. Download from website https://neo4j.com/download/
-2. Install "Neo4j Desktop"
-## Create Graph
-1. Select "New Project"
-2. Click "Add Graph" from panel to be opened. 
-3. Start service
-4. Click "Open Browser" from Manage page
-## Add Data to Database
-### Add Movie
+# B. CREATE A GRAPH DATABASE
+## 1. Install "Neo4j Desktop" 
+i. Download from website https://neo4j.com/download/
+ii. Install "Neo4j Desktop"
+## 2. Create Graph
+i. Select "New Project"
+ii. Click "Add Graph" from panel to be opened. 
+iii. Start service
+iv. Click "Open Browser" from Manage page
+## 3. Add Data to Database
+### a. Add Movie
 * CREATE (Inception:Movie {title: 'Inception', director: 'Christopher Nalan'})
 * CREATE (DarkKnight:Movie {title: 'The Dark Knight', director: 'Christopher Nalan'})
-### Add User
+### b. Add User
 * CREATE (FurkanUyanik: User {name: 'Furkan Uyanik', age: 23})
 * CREATE (YunusKan: User {name: 'Yunus Kan', age: 39})
 * CREATE (UmutNalkiran: User {name: 'Umut Nalkıran', age: 34})
 * CREATE (GurkanSolen: User {name: 'Gürkan Şölen', age: 20})
-### Add Connection
+### c. Add Connection
 * CREATE (Inception)-[:RATED {rating: 9}]->(FurkanUyanik)
 * CREATE (Inception)-[:RATED {rating: 2}]->(YunusKan)
 * CREATE (Inception)-[:RATED {rating: 6}]->(UmutNalkiran)
