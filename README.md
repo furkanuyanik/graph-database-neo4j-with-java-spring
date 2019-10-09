@@ -25,7 +25,7 @@ Using Graph Database (Neo4J) with Java Spring Framework
             <artifactId>neo4j-ogm-bolt-driver</artifactId>
             <version>3.2.0-RC2</version>
         </dependency>
-        ```
+```
         
 # B. CREATE A GRAPH DATABASE
 ## 1. Install "Neo4j Desktop" 
