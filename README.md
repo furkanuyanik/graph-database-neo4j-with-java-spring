@@ -18,8 +18,7 @@ Using Graph Database (Neo4J) with Java Spring Framework
 
 ## 2. Set Configurations
 - Open CMD and run 'mvnw spring-boot:run' in project files
-- Open 'pom.xml' and insert to code
-- Insert the following code
+- Open 'pom.xml' and insert to code (Insert the following code)
         <dependency>
             <groupId>org.neo4j</groupId>
             <artifactId>neo4j-ogm-bolt-driver</artifactId>
